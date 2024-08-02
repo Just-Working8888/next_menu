@@ -40,7 +40,7 @@ export default async function HomePage({ searchParams }: { searchParams: GetSear
                   ),
               )}
             </div>
-          
+
             <div className="flex items-center gap-6 mt-12">
               <Pagination pageCount={meta.pageCount} currentPage={meta.currentPage} />
               <span className="text-sm text-gray-400">5 из 65</span>

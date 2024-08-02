@@ -1,11 +1,10 @@
-import { PizzaSize } from '@/hooks/use-choose-pizza';
 import { cn } from '@/lib/utils';
 import React from 'react';
 
 interface Props {
   className?: string;
   imageUrl: string;
-  size: PizzaSize;
+  size: any;
 }
 
 export const PizzaImage: React.FC<Props> = ({ className, imageUrl, size }) => {

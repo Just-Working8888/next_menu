@@ -2,12 +2,11 @@ import { Container } from '@/components/shared/container';
 import { OrderItem } from '@/components/shared/order-item';
 
 import { Title } from '@/components/shared/title';
-import { getUserSession } from '@/lib/get-user-session';
 import { prisma } from '@/lib/prisma';
 import { redirect } from 'next/navigation';
 
 export default async function OrdersPage() {
-  const session = await getUserSession();
+  const session = { id: 'das' }
 
   if (!session) {
     return redirect('/not-auth');
